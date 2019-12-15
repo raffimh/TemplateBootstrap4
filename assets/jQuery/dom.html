@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="destination">
+        <li class="kota1">Bandung</li>
+        <li>Jakarta</li>
+        <ul>
+            <li>Jakarta Selatan</li>
+            <li>Jakarta Pusat</li>
+            <li id="kota2">Jakarta Timur</li>
+            <li>Jakarta Barat</li>
+        </ul>
+        <li>Surabaya</li>
+        <li class="kota3">Makassar</li>
+    </ul>
+    <button>Aksi</button>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#destination li:odd").css("background-color", "yellow");
+                $("#destination li:even").css("background-color", "blue");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .merah {
+            color: red;
+        }
+
+        .biru {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kemana Kamu Akan Pergi?</h1>
+    <ul class="lokasi">
+        <li class="bandung">
+            Bandung
+        </li>
+        <li class="jakarta">
+            Jakarta
+        </li>
+        <li class="surabaya">
+            Surabaya
+        </li>
+        <li class="makasar">
+            Makassar
+        </li>
+    </ul>
+    <button id="bandungjadibiru">JADI BIRU!</button>
+    <button id="bandungjadimerah">JADI MERAH!</button>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#bandungjadibiru').on('click', function () {
+                $('.bandung').addClass('biru');
+                $('.bandung').removeClass('merah');
+            });
+            $('#bandungjadimerah').on('click', function () {
+                $('.bandung').addClass('merah');
+                $('.bandung').removeClass('biru');
+            })
+        });
+    </script>
+</body>
+
+</html>

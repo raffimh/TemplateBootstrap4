@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Kemana Kamu Akan Pergi?</h1>
+    <ul class="lokasi">
+        <li>Bandung</li>
+        <li>Jakarta</li>
+        <ul>
+            <li>Jakarta Selatan</li>
+            <li>Jakarta Pusat</li>
+            <li>Jakarta Timur</li>
+            <li>Jakarta Barat</li>
+        </ul>
+        <li class="surabaya"><strong>Surabaya</strong></li>
+        <li>Makassar</li>
+    </ul>
+    <button>Aksi</button>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log($(".surabaya").html());
+        });
+    </script>
+</body>
+
+</html>

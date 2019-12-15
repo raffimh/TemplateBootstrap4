@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="css/text" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="css/text" href="slick-1.8.1/slick/slick-theme.css">
+</head>
+
+<body>
+    <div class="your-class">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+    </div>
+
+    <button class="JPO_open">Open popup</button>
+    <div id="JPO">
+        {{ Popup Content }}
+        <!-- Add a button to close the popup (optional) -->
+        <button class="JPO_close">Close</button>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery-popup-overlay/jquery.popupoverlay.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick();
+            $('#JPO').popup();
+        });
+    </script>
+</body>
+
+</html>
